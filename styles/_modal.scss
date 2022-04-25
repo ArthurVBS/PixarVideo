@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.modal{
+  background-color: #000000AA;
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition: all .3s;
+  z-index: 2;
+
+  .box{
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+    width: 90%;
+    height: 75%;
+    border-radius: 8px;
+    padding: 8px;
+
+    .exit{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      font-size: 1.4em;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-bottom-left-radius: 50%;
+      transition: all .3s;
+      z-index: 3;
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+
+    iframe{
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+}

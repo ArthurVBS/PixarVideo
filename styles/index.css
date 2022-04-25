@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 header{
-  background: linear-gradient(#000000DD, #00000080 100%), url('../images/main-movie.jpg');
+  background: linear-gradient(#000000DD, #00000080 100%), url('../images/main-movie-01.jpg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -91,13 +91,14 @@ header .main-movie{
   align-items: center;
   gap: 32px;
   width: 100%;
-  min-height: 440px;
+  min-height: 500px;
   padding: 16px;
 }
 
 .main-movie .movie-title{
   font-size: 3.8em;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .main-movie .movie-info{
@@ -109,7 +110,7 @@ header .main-movie{
 }
 
 .main-movie .movie-description{
-  text-align: center;
+  text-align: justify;
 }
 
 .main-movie .buttons{
@@ -167,6 +168,28 @@ main .carousel{
   height: 100%;
   width: 100%;
   cursor: pointer;
+}
+
+.carousel .item i.fa-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 1.8em;
+  transition: all .3s;
+}
+
+.carousel .item i.fa-play:hover{
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel .item img:hover ~ i.fa-play{
+  visibility: visible;
+  opacity: 1;
 }
 
 .carousel .item .watching{
@@ -287,8 +310,8 @@ footer .text{
     padding: 16px 32px;
   }
 
-  .main-movie .movie-description{
-    text-align: justify;
+  .main-movie .movie-title{
+    text-align: start;
   }
 
   main .carousel{

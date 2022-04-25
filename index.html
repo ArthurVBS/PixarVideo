@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <section class="top">
       <div class="left">
         <h2 class="logo">Pixar <i class="fas fa-play"></i></h2>
@@ -38,15 +38,14 @@
     </section>
 
     <section class="main-movie">
-      <h1 class="movie-title">Encanto</h1>
+      <h1 id="main-move-title" class="movie-title">Encanto</h1>
       <div class="movie-info">
-        <h4><i class="far fa-star"></i> 77%</h4>
-        <h4><i class="far fa-calendar-alt"></i> 2021</h4>
-        <h4><i class="fas fa-hourglass-half"></i> 1h 42m</h4>
+        <h4><i class="far fa-star"></i> <span id="main-movie-score">77</span>%</h4>
+        <h4><i class="far fa-calendar-alt"></i> <span id="main-movie-year">2021</span></h4>
+        <h4><i class="fas fa-hourglass-half"></i> <span id="main-movie-time">1h 42m</span></h4>
       </div>
 
-      <p class="movie-description">The tale of an extraordinary family, the Madrigals, who live hidden in the mountains
-        of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto.</p>
+      <p id="main-movie-description" class="movie-description">The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto.</p>
 
       <div class="buttons">
         <button><i class="fas fa-play"></i> Watch</button>
@@ -63,6 +62,8 @@
         <div class="item">
           <img src="images/poster-vt-16.jpg" alt="Movie's Posters">
 
+          <i class="fas fa-play"></i>
+
           <div class="watching">
             <div class="time">
               <div style="width: 10%;"></div>
@@ -72,6 +73,8 @@
 
         <div class="item">
           <img src="images/poster-vt-17.jpg" alt="Movie's Posters">
+
+          <i class="fas fa-play"></i>
 
           <div class="watching">
             <div class="time">
@@ -270,11 +273,10 @@
           rel="external">@ArthurVBS</a></p>
     </div>
   </footer>
-
+  <script src="scripts/index.js"></script>
   <!-- Owl & jQuery JS-->
   <script src="scripts/owl/jquery.min.js"></script>
   <script src="scripts/owl/owl.carousel.min.js"></script>
-
   <!-- Setup JS-->
   <script src="scripts/owl/setup.js"></script>
 </body>

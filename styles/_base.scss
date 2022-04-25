@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+$primary-color: #123241;
+$secondary-color: #1399de;
+$background: #1f1f1f;
+
+body {
+  background-color: $primary-color;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}

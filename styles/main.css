@@ -1,13 +1,74 @@
-@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
-header{
-  background: linear-gradient(#000000DD, #00000080 100%), url('../images/main-movie-01.jpg');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::after, blockquote::before,
+q::after,
+q::before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #123241;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: #1f1f1f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 8px;
+  border: 4px solid #1f1f1f;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #c0c0c0;
+}
+
+header {
+  background: linear-gradient(#000000DD, #00000080 100%), url("../images/main-movie-01.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-header .top{
+header .top {
   background-color: #00000080;
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +78,7 @@ header .top{
   padding: 16px;
 }
 
-.top .left{
+header .top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,16 +86,16 @@ header .top{
   gap: 16px 32px;
 }
 
-.top .left .logo{
+header .top .left .logo {
   font-size: 2em;
   letter-spacing: 1px;
 }
 
-.top .left .logo i{
+header .top .left .logo i {
   font-size: .9em;
 }
 
-.top .left .navigation{
+header .top .left .navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,16 +103,16 @@ header .top{
   gap: 16px;
 }
 
-.top .left .navigation a{
+header .top .left .navigation a {
   color: white;
   transition: all .3s;
 }
 
-.top .left .navigation a:hover{
+header .top .left .navigation a:hover {
   color: #FFFFFF80;
 }
 
-.top .right{
+header .top .right {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,7 +120,7 @@ header .top{
   gap: 16px;
 }
 
-.top .right button{
+header .top .right button {
   background-color: transparent;
   color: white;
   cursor: pointer;
@@ -68,11 +129,11 @@ header .top{
   transition: all .3s;
 }
 
-.top .right button:hover{
+header .top .right button:hover {
   color: #FFFFFF80;
 }
 
-.top .right button .profile{
+header .top .right button .profile {
   border: 2px solid #FFFFFF80;
   border-radius: 50%;
   width: 40px;
@@ -80,11 +141,11 @@ header .top{
   transition: all .3s;
 }
 
-.top .right button .profile:hover{
+header .top .right button .profile:hover {
   border-radius: 25%;
 }
 
-header .main-movie{
+header .main-movie {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,13 +156,13 @@ header .main-movie{
   padding: 16px;
 }
 
-.main-movie .movie-title{
+header .main-movie .movie-title {
   font-size: 3.8em;
   letter-spacing: 2px;
   text-align: center;
 }
 
-.main-movie .movie-info{
+header .main-movie .movie-info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,11 +170,11 @@ header .main-movie{
   gap: 16px;
 }
 
-.main-movie .movie-description{
+header .main-movie .movie-description {
   text-align: justify;
 }
 
-.main-movie .buttons{
+header .main-movie .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -121,7 +182,7 @@ header .main-movie{
   gap: 16px;
 }
 
-.main-movie .buttons button{
+header .main-movie .buttons button {
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -138,21 +199,48 @@ header .main-movie{
   transition: all .3s;
 }
 
-.main-movie .buttons button:nth-child(1){
+header .main-movie .buttons button:hover {
+  opacity: .8;
+}
+
+header .main-movie .buttons button:nth-child(1) {
   background-color: white;
   color: black;
 }
 
-.main-movie .buttons button:nth-child(2){
-  background-color: var(--primary);
+header .main-movie .buttons button:nth-child(2) {
+  background-color: #123241;
   color: white;
 }
 
-.main-movie .buttons button:hover{
-  opacity: .8;
+@media screen and (min-width: 628px) {
+  header .top {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+  header .top .left {
+    flex-direction: row;
+  }
+  header .main-movie {
+    align-items: flex-start;
+    width: 70%;
+    gap: 16px;
+    padding: 16px 32px;
+  }
+  header .main-movie .movie-title {
+    text-align: start;
+  }
 }
 
-main .carousel{
+@media screen and (min-width: 928px) {
+  header .main-movie {
+    width: 45%;
+  }
+}
+
+.carousel {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -162,15 +250,19 @@ main .carousel{
   padding: 16px;
 }
 
-.carousel .item img{
+.carousel .item img {
   display: block;
   border-radius: 4px;
   height: 100%;
   width: 100%;
-  cursor: pointer;
 }
 
-.carousel .item i.fa-play{
+.carousel .item img:hover ~ i.fa-play {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel .item i.fa-play {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -182,17 +274,12 @@ main .carousel{
   transition: all .3s;
 }
 
-.carousel .item i.fa-play:hover{
+.carousel .item i.fa-play:hover {
   visibility: visible;
   opacity: 1;
 }
 
-.carousel .item img:hover ~ i.fa-play{
-  visibility: visible;
-  opacity: 1;
-}
-
-.carousel .item .watching{
+.carousel .item .watching {
   background-color: #00000080;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -200,26 +287,27 @@ main .carousel{
   transform: translateY(-100%);
 }
 
-.carousel .item .watching .time{
+.carousel .item .watching .time {
   width: 100%;
   height: 12px;
   border-radius: 4px;
-  background-color: var(--primary);
+  background-color: #123241;
   padding: 2px;
 }
 
-.carousel .item .watching .time div{
+.carousel .item .watching .time div {
   /* width: ??%; Style Inline */
   height: 8px;
   border-radius: 4px;
-  background-color: var(--secondary);
+  background-color: #1399de;
 }
 
-.carousel .item .movie-info{
+.carousel .item .movie-info {
   background-color: #000000AA;
   position: absolute;
   bottom: 0;
   left: 0;
+  cursor: pointer;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -229,15 +317,15 @@ main .carousel{
   text-align: center;
   padding: 8px 16px;
   transform: translateY(100%);
-  transition: all .3s
+  transition: all .3s;
 }
 
-.carousel .item .movie-info .movie-title{
+.carousel .item .movie-info .movie-title {
   font-size: 1.5em;
   letter-spacing: 1px;
 }
 
-.carousel .item .movie-info div{
+.carousel .item .movie-info div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -245,19 +333,26 @@ main .carousel{
   gap: 8px;
 }
 
-.carousel .item .movie-info div h4{
-  font-weight: 400
+.carousel .item .movie-info div h4 {
+  font-weight: 400;
 }
 
-.carousel .item img:hover ~ .movie-info{
+.carousel .item img:hover ~ .movie-info,
+.carousel .item .movie-info:hover {
   transform: translateY(0%);
 }
 
-footer{
-  background-color: var(--background);
+@media screen and (min-width: 628px) {
+  .carousel {
+    padding: 16px 32px;
+  }
 }
 
-footer .text{
+footer {
+  background-color: #1f1f1f;
+}
+
+footer .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,66 +361,31 @@ footer .text{
   padding: 16px 32px;
 }
 
-.text .logo{
+footer .text .logo {
   font-size: 1.3em;
   letter-spacing: 1px;
 }
 
-.text .logo i{
+footer .text .logo i {
   font-size: .9em;
 }
 
-.text .made-by{
+footer .text .made-by {
   color: #AAA;
   letter-spacing: 1px;
 }
 
-.text .made-by a{
-  color: var(--secondary);
+footer .text .made-by a {
+  color: #1399de;
   transition: all .3s;
 }
 
-.text .made-by a:hover{
+footer .text .made-by a:hover {
   color: white;
 }
 
-/* Media Query */
-
 @media screen and (min-width: 628px) {
-  header .top{
-    background-color: transparent;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px 32px;
-  }
-
-  .top .left{
-    flex-direction: row;
-  }
-
-  header .main-movie{
-    align-items: flex-start;
-    width: 70%;
-    gap: 16px;
-    padding: 16px 32px;
-  }
-
-  .main-movie .movie-title{
-    text-align: start;
-  }
-
-  main .carousel{
-    padding: 16px 32px;
-  }
-
-  footer .text{
+  footer .text {
     padding: 32px;
-    padding-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 928px) {
-  header .main-movie{
-    width: 45%;
   }
 }

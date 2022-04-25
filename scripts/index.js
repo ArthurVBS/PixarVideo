@@ -44,7 +44,7 @@ function setMainMovie(currCount) {
   ]
 
   header.style.backgroundImage = `linear-gradient(#000000DD, #00000080 100%),
-  url(../images/main-movie-0${currCount + 1}.jpg)`
+  url('./images/main-movie-0${currCount + 1}.jpg')`
 
   title.innerText = moviesData[currCount].title
   score.innerText = moviesData[currCount].score

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+footer {
+  background-color: $background;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+
+    .logo {
+      font-size: 1.3em;
+      letter-spacing: 1px;
+
+      i {
+        font-size: .9em;
+      }
+    }
+
+    .made-by {
+      color: #AAA;
+      letter-spacing: 1px;
+
+      a {
+        color: $secondary-color;
+        transition: all .3s;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 628px) {
+  footer .text {
+    padding: 32px;
+  }
+}

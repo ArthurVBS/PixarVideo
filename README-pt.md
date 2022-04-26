@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
   &nbsp;
   <img src="https://img.shields.io/badge/jQuery-000?style=social&logo=jquery&logoColor=469BD2">
+  &nbsp;
+  <img src="https://img.shields.io/badge/SASS-000?style=social&logo=sass&logoColor=469BD2">
 </div>
 
 ## 🗣️ ReadMe:
@@ -23,11 +25,12 @@
 
 - 🎥 Um site baseado na Netflix e no Prime Video, contudo com o tema da Pixar.
 - 🎓 Projeto proposto pela DIO (Digital Innovation One) para avaliar o desenvolvimento de HTML e CSS.
+- 🎨 Meu primeiro projeto usando e aprendendo sobre 'SASS/SCSS'.
 - 🎲 Os cartazes, artes e algumas informações foram retiradas do seguinte site: [The Movie Database](https://www.themoviedb.org/).
 
 ## 💻 Situação do projeto:
 
-- 🚧 Projeto em progresso... 🛠️
+- ✔️ Projeto finalizado ✌🏽
 
 ## 🛠 Tecnologias:
 
@@ -35,9 +38,11 @@
 - CSS
 - JavaScript
 - jQuery (Owl Carousel 2)
+- SASS/SCSS
 
 ## 📝 Features:
 
+- [x] Mostrar o trailer de cada fime.
 - [x] Mostrar os cartazes em um carrossel infinito.
 - [x] Mostrar algumas informações sobre o filme em cartaz.
 

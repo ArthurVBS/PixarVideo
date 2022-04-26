@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
   &nbsp;
   <img src="https://img.shields.io/badge/jQuery-000?style=social&logo=jquery&logoColor=469BD2">
+    &nbsp;
+  <img src="https://img.shields.io/badge/SASS-000?style=social&logo=sass&logoColor=469BD2">
 </div>
 
 ## 🗣️ ReadMe:
@@ -23,11 +25,12 @@
 
 - 🎥 A website based on Netflix and Prime Video, but with a Pixar theme.
 - 🎓 Project proposed by DIO (Digital Innovation One) to evaluate the development in HTML & CSS.
+- 🎨 My first project using and learning about 'SASS/SCSS'.
 - 🎲 The posters, artwork and some information were taken from the following website: [The Movie Database](https://www.themoviedb.org/).
 
 ## 💻 Project status:
 
-- 🚧 Project in progress... 🛠️
+- ✔️ Finished project ✌🏽
 
 ## 🛠 Technologies:
 
@@ -35,9 +38,11 @@
 - CSS
 - JavaScript
 - jQuery (Owl Carousel 2)
+- SASS/SCSS
 
 ## 📝 Features:
 
+- [x] Show the trailer of each movie.
 - [x] Show the posters on the infinite carousel.
 - [x] Show some information about the movie on the poster.
 
